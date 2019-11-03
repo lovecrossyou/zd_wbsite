@@ -15,28 +15,28 @@
         <el-tab-pane label="资源覆盖" name="resources"></el-tab-pane>
         <el-tab-pane label="未来展望" name="future"></el-tab-pane>
         <el-tab-pane disabled label="|" name="divider"></el-tab-pane>
-    
+
         <el-tab-pane label="消息通知" name="message"></el-tab-pane>
         <el-tab-pane label="加入我们" name="joinus"></el-tab-pane>
       </el-tabs>
     </div>
-    <div class="content">
-      <div>xzxsssssdsdsds</div>
-      <div>xzxsssssdsdsds</div>
-
-      <div>xzxsssssdsdsds</div>
-
-      <div>xzxsssssdsdsds</div>
+    <div class="yellow_bg" />
+    <div class="content_wrapper">
+      <home />
     </div>
   </div>
 </template>
 
 <script>
+import home from "@/components/home";
 export default {
   data() {
     return {
       activeName: "home"
     };
+  },
+  components: {
+    home
   },
   methods: {
     handleClick(tab, event) {
@@ -55,10 +55,6 @@ export default {
   color: #ffd570 !important;
 }
 
-.body {
-  /* width: 100%;
-  height: 100%; */
-}
 .header_wrapper {
   display: flex;
   flex-direction: row;
@@ -75,7 +71,6 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  /* height: 440px; */
 }
 .el-tabs__active-bar {
   background-color: #ffd570 !important;
@@ -91,6 +86,7 @@ export default {
   border-top: 0px solid transparent;
   border-right: 1366px solid #000000;
   border-bottom: 300px solid transparent;
+  z-index: -1;
 }
 .logo {
   width: 34px;
@@ -108,9 +104,47 @@ export default {
   font-weight: bold;
 }
 
-.content {
+.banner_wrapper {
+  height: 234px;
   width: 100%;
-  height: 200px;
+  background: #cc2636;
+  margin-top: 20px;
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 243px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
+
+.yellow_bg {
+  height: 343px;
   background: #ffd570;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 140px 0px 140px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 58px;
+  left: 28px;
+  right: 28px;
+  z-index: -1;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
