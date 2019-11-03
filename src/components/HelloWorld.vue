@@ -13,13 +13,9 @@
         <el-tab-pane label="合作企业" name="company"></el-tab-pane>
 
         <el-tab-pane label="资源覆盖" name="resources"></el-tab-pane>
-        <el-tab-pane>
-          <span slot="label">
-            <span>未来展望</span>
-            <el-divider direction="vertical"></el-divider>
-          </span>
-        </el-tab-pane>
-
+        <el-tab-pane label="未来展望" name="future"></el-tab-pane>
+        <el-tab-pane disabled label="|" name="divider"></el-tab-pane>
+    
         <el-tab-pane label="消息通知" name="message"></el-tab-pane>
         <el-tab-pane label="加入我们" name="joinus"></el-tab-pane>
       </el-tabs>
