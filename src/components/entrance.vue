@@ -47,6 +47,10 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 .el-tabs__item {
   color: #ffffff !important;
 }
@@ -61,6 +65,7 @@ export default {
   align-items: center;
 }
 .logo_wrapper {
+  margin-left: 40px;
   display: flex;
   flex-direction: row;
   z-index: 1;
