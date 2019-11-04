@@ -3,7 +3,7 @@
     <div class="triangle_topleft"></div>
     <div class="header_wrapper">
       <div class="logo_wrapper">
-        <img src class="logo" alt />
+        <img src="@/assets/logo.png" class="logo" alt />
         <div class="company_name">众德集团</div>
       </div>
       <el-tabs v-model="activeName" @tab-click="handleClick">
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     handleClick(tab, event) {
-      console.log(tab, event);
+      // console.log(tab, event);
     }
   }
 };
@@ -65,7 +65,7 @@ export default {
   align-items: center;
 }
 .logo_wrapper {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   display: flex;
   flex-direction: row;
   z-index: 1;
@@ -96,7 +96,6 @@ export default {
 .logo {
   width: 34px;
   height: 34px;
-  background-color: #ffd570;
   border-radius: 50%;
   margin-right: 17px;
   margin-left: 50px;
