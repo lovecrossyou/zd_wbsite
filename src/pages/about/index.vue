@@ -1,52 +1,25 @@
 <template>
   <div class="body">
-    <div class="triangle_topleft"></div>
-    <div class="header_wrapper">
-      <div class="logo_wrapper">
-        <img src="@/assets/logo.png" class="logo" alt />
-        <div class="company_name">众德集团</div>
-      </div>
-      <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="首页" name="home"></el-tab-pane>
-        <el-tab-pane label="主营业务" name="business"></el-tab-pane>
-        <el-tab-pane label="关于我们" name="about"></el-tab-pane>
-        <el-tab-pane label="合作企业" name="company"></el-tab-pane>
-
-        <el-tab-pane label="资源覆盖" name="resources"></el-tab-pane>
-        <el-tab-pane label="未来展望" name="future"></el-tab-pane>
-        <el-tab-pane disabled label="|" name="divider"></el-tab-pane>
-
-        <el-tab-pane label="消息通知" name="message"></el-tab-pane>
-        <el-tab-pane label="加入我们" name="joinus"></el-tab-pane>
-      </el-tabs>
-    </div>
-    <div class="yellow_bg" />
+    <TabNav />
     <div class="content_wrapper">
-      <home />
     </div>
   </div>
 </template>
 
 <script>
-import home from "@/components/home";
+import TabNav from "@/components/tabnav.vue";
 export default {
   data() {
-    return {
-      activeName: "home"
-    };
+    return {};
   },
   components: {
-    home
+    TabNav
   },
-  methods: {
-    handleClick(tab, event) {
-      // console.log(tab, event);
-    }
-  }
+  methods: {}
 };
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +36,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  background: #000000;
 }
 .logo_wrapper {
   /* margin-left: 40px; */
