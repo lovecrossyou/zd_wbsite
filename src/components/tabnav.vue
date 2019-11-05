@@ -6,9 +6,9 @@
         <div class="company_name">众德集团</div>
       </div>
       <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="首页" name="/"></el-tab-pane>
-        <el-tab-pane label="主营业务" name="business"></el-tab-pane>
-        <el-tab-pane label="关于我们" name="about"></el-tab-pane>
+        <el-tab-pane lazy label="首页" name="/"></el-tab-pane>
+        <el-tab-pane lazy label="主营业务" name="business"></el-tab-pane>
+        <el-tab-pane lazy label="关于我们" name="about"></el-tab-pane>
         <el-tab-pane label="合作企业" name="cooperation"></el-tab-pane>
 
         <el-tab-pane label="资源覆盖" name="resources"></el-tab-pane>
@@ -19,15 +19,12 @@
         <el-tab-pane label="加入我们" name="joinus"></el-tab-pane>
       </el-tabs>
     </div>
-    <div class="content_wrapper">
-      <!-- <home /> -->
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props:{
+  props: {
     // clearBg: false
   },
   data() {
@@ -39,8 +36,14 @@ export default {
   methods: {
     handleClick(tab, event) {
       const tabName = tab.name;
-      this.activeName = tabName;
-      this.$router.push(tabName, () => {}, e => {});
+      // console.log('handleClick ', tabName);
+      this.$router.push(
+        tabName,
+        () => {
+          this.activeName = tabName;
+        },
+        e => {}
+      );
     }
   }
 };
