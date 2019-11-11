@@ -43,11 +43,11 @@
     </el-row>
     <el-divider></el-divider>
     <el-row :gutter="20">
-      <el-col :span="7" offset="8">
+      <el-col :span="7" offset=8>
         <div class="copy_right">
           <img src="@/assets/logo.png" alt class="copy_right_logo" />
           <div>
-            <div class="copy_rght_text">河南众德人力资源服务有限公司</div>
+            <div class="padding5">河南众德人力资源服务有限公司</div>
             <div class="copy_right">
               <div class="copy_rght_text">京ICP备*********</div>
               <div class="copy_rght_text">京公安备案*********号</div>
@@ -73,9 +73,16 @@ export default {};
   box-sizing: border-box;
 }
 
-.copy_rght_text{
+.padding5{
+  padding-bottom: 5px;
+  box-sizing: border-box;
   font-size: 10px;
-  color: #9F9F9F;
+  color: #9f9f9f;
+}
+
+.copy_rght_text {
+  font-size: 10px;
+  color: #9f9f9f;
 }
 
 .footer_row {

@@ -5,7 +5,7 @@
         <img src="@/assets/logo.png" class="logo" alt />
         <div class="company_name">众德集团</div>
       </div>
-      <el-tabs v-model="activeName" @tab-click="handleClick">
+      <el-tabs v-model="activeTabName" @tab-click="handleClick">
         <el-tab-pane lazy label="首页" name="/"></el-tab-pane>
         <el-tab-pane lazy label="主营业务" name="business"></el-tab-pane>
         <el-tab-pane lazy label="关于我们" name="about"></el-tab-pane>
@@ -23,24 +23,23 @@
 </template>
 
 <script>
+import { mapMutations, mapState } from "vuex";
 export default {
-  props: {
-    // clearBg: false
-  },
+  props: {},
   data() {
-    return {
-      activeName: "/"
-    };
+    return {};
+  },
+  computed: {
+    ...mapState("navTabStore", ["activeTabName"])
   },
   components: {},
   methods: {
+    ...mapMutations("navTabStore", ["changeTab"]),
     handleClick(tab, event) {
-      const tabName = tab.name;
-      // console.log('handleClick ', tabName);
       this.$router.push(
-        tabName,
+        tab.name,
         () => {
-          this.activeName = tabName;
+          this.changeTab(tab.name);
         },
         e => {}
       );

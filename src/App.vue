@@ -1,13 +1,15 @@
 <template>
-    <div>
-        <!-- 留坑，非常重要 -->
-        <router-view></router-view>
-    </div>
+  <div>
+    <!-- 留坑，非常重要 -->
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+  </div>
 </template>
 <script>
-    export default {
-        data(){
-            return {}
-        }
-    }
+export default {
+  data() {
+    return {};
+  }
+};
 </script>
