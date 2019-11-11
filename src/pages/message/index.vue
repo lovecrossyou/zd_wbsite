@@ -4,7 +4,7 @@
     <YellowBg />
     <div>
       <el-row :gutter="20">
-        <el-col :span="10" offset="8">
+        <el-col :span="10" offset=8>
           <div class="top">
             <img src="@/assets/logo.png" alt class="copy_right_logo" />
             <div class="ml10">

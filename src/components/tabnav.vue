@@ -5,7 +5,7 @@
         <img src="@/assets/logo.png" class="logo" alt />
         <div class="company_name">众德集团</div>
       </div>
-      <el-tabs v-model="activeTabName" @tab-click="handleClick">
+      <el-tabs :value="activeTabName" @tab-click="handleClick">
         <el-tab-pane lazy label="首页" name="/"></el-tab-pane>
         <el-tab-pane lazy label="主营业务" name="business"></el-tab-pane>
         <el-tab-pane lazy label="关于我们" name="about"></el-tab-pane>
