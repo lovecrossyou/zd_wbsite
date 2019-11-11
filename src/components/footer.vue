@@ -38,7 +38,21 @@
             <div class="footer_text">公司地址</div>
           </div>
           <div class="footer_text_addr">河南省郑州市龙子湖高校园区正商木华广场3号楼A座16楼1607室</div>
-
+        </div>
+      </el-col>
+    </el-row>
+    <el-divider></el-divider>
+    <el-row :gutter="20">
+      <el-col :span="7" offset="8">
+        <div class="copy_right">
+          <img src="@/assets/logo.png" alt class="copy_right_logo" />
+          <div>
+            <div class="copy_rght_text">河南众德人力资源服务有限公司</div>
+            <div class="copy_right">
+              <div class="copy_rght_text">京ICP备*********</div>
+              <div class="copy_rght_text">京公安备案*********号</div>
+            </div>
+          </div>
         </div>
       </el-col>
     </el-row>
@@ -53,10 +67,15 @@ export default {};
 .footer_content {
   margin-top: 38px;
   width: 100%;
-  height: 218px;
+  /* height: 218px; */
   background-color: #000000;
   padding-top: 20px;
   box-sizing: border-box;
+}
+
+.copy_rght_text{
+  font-size: 10px;
+  color: #9F9F9F;
 }
 
 .footer_row {
@@ -66,7 +85,21 @@ export default {};
   margin-bottom: 10px;
 }
 
-.dianhua{
+.copy_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.copy_right_logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.dianhua {
   width: 10px;
   height: 9px;
   margin-right: 5px;
@@ -80,7 +113,7 @@ export default {};
   margin-bottom: 10px;
 }
 
-.footer_text_addr{
+.footer_text_addr {
   font-size: 12px;
   color: #ffffff;
   font-weight: 400;
