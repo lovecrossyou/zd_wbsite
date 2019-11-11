@@ -69,6 +69,7 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -76,6 +77,8 @@
 import home from "./home";
 import TabNav from "@/components/tabnav.vue";
 import HomeTitle from "@/components/hometitle.vue";
+import Footer from "@/components/footer";
+
 export default {
   data() {
     return {};
@@ -83,7 +86,8 @@ export default {
   components: {
     home,
     TabNav,
-    HomeTitle
+    HomeTitle,
+    Footer
   },
   methods: {}
 };

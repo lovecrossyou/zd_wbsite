@@ -1,19 +1,43 @@
 <template>
   <div class="body">
     <TabNav />
+    <div class="future_yellow_bg"></div>
+
     <div class="content_wrapper">
+      <div class="content">
+        <img src="@/assets/future/weilai@2x.png" class="pic_banner" />
+        <div class="future_content">
+          <div class="future_content_title">
+            <HomeTitle title="未来展望" desc="Looking forward" />
+          </div>
+          <div class="future_content_text_wrapper">
+            <div
+              class="future_content_text"
+            >公司将依托强大的资源网络，专业干练的业务团队，强硬的企业关系继续默默深耕，奋力往前，稳步发展， 争取做国内最具影响力的人力资源品牌!</div>
+            <div class="future_content_text">众德集团将立足河南，辐射周边，放眼全国并坚守原则，以德致胜，争取迈向全国人力资源市场最前列！</div>
+            <div class="future_content_text">励志在行业内做到绝对诚信，用最好的态度服务好企业和工人。让行业以我们的服务态度和诚信为标杆。</div>
+          </div>
+          <img src="@/assets/future/zhanwang@2x.png" class="right_logo" />
+        </div>
+      </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import TabNav from "@/components/tabnav.vue";
+import HomeTitle from "@/components/hometitle.vue";
+import Footer from "@/components/footer";
+
 export default {
   data() {
     return {};
   },
   components: {
-    TabNav
+    TabNav,
+    HomeTitle,
+    Footer
   },
   methods: {}
 };
@@ -23,6 +47,15 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+.future_yellow_bg {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: #ffd570;
+  z-index: -1;
 }
 .el-tabs__item {
   color: #ffffff !important;
@@ -97,32 +130,58 @@ export default {
   margin: 0;
 }
 
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
-
-.yellow_bg {
-  height: 343px;
-  background: #ffd570;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 28px 140px 0px 140px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 58px;
-  left: 28px;
-  right: 28px;
-  z-index: -1;
+.content {
+  width: 66%;
 }
 
 .content_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.pic_banner {
+  width: 100%;
+  height: 305px;
+  margin-top: 40px;
+  background: #e1e1e1;
+}
+
+.future_content {
+  margin-top: 40px;
+  width: 100%;
+  height: 200px;
+  background: #ffffff;
+  padding-left: 14px;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.future_content_title {
+  position: absolute;
+  top: 38px;
+  left: 115px;
+}
+
+.future_content_text_wrapper {
+  position: absolute;
+  width: 300px;
+  overflow-wrap: break-word;
+  top: 98px;
+  left: 10px;
+}
+
+.right_logo {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 55%;
+  height: 90%;
+}
+
+.future_content_text {
+  font-size: 10px;
+  color: #333333;
 }
 </style>
