@@ -96,6 +96,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #F8F8F8;
+
 }
 
 .map_box_content {
