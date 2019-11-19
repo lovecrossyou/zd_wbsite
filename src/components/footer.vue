@@ -1,7 +1,7 @@
 <template>
   <div class="footer_content">
     <el-row :gutter="20">
-      <el-col :span="4" :offset=6>
+      <el-col :span="4" :offset=5>
         <div class="grid-content bg-purple">
           <div class="title">公司介绍</div>
           <div class="footer_text">首页</div>
