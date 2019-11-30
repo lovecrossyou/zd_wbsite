@@ -20,13 +20,11 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import HomeTitle from "@/components/hometitle.vue";
-import Footer from "@/components/footer";
 import YellowBg from "@/components/yellowbg.vue";
 export default {
   data() {
@@ -34,7 +32,6 @@ export default {
   },
   components: {
     HomeTitle,
-    Footer,
     YellowBg
   },
   methods: {}
