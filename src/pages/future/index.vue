@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <TabNav />
     <YellowBg />
 
     <div class="content_wrapper">
@@ -26,7 +25,6 @@
 </template>
 
 <script>
-import TabNav from "@/components/tabnav.vue";
 import HomeTitle from "@/components/hometitle.vue";
 import Footer from "@/components/footer";
 import YellowBg from "@/components/yellowbg.vue";
@@ -35,7 +33,6 @@ export default {
     return {};
   },
   components: {
-    TabNav,
     HomeTitle,
     Footer,
     YellowBg

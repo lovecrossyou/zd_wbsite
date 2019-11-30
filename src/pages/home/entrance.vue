@@ -1,7 +1,6 @@
 <template>
   <div class="body">
     <div class="triangle_topleft"></div>
-    <TabNav />
     <div class="yellow_bg" />
     <div class="content_wrapper">
       <home />
@@ -75,7 +74,6 @@
 
 <script>
 import home from "./home";
-import TabNav from "@/components/tabnav.vue";
 import HomeTitle from "@/components/hometitle.vue";
 import Footer from "@/components/footer";
 
@@ -85,7 +83,6 @@ export default {
   },
   components: {
     home,
-    TabNav,
     HomeTitle,
     Footer
   },

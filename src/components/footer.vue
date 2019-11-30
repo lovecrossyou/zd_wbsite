@@ -70,6 +70,7 @@ export default {};
   /* height: 218px; */
   background-color: #000000;
   padding-top: 20px;
+  padding-bottom:10px;
   box-sizing: border-box;
 }
 

@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <TabNav />
     <YellowBg />
     <div>
       <el-row :gutter="20">
@@ -22,7 +21,6 @@
 </template>
 
 <script>
-import TabNav from "@/components/tabnav.vue";
 import YellowBg from "@/components/yellowbg.vue";
 import Footer from "@/components/footer";
 
@@ -31,7 +29,6 @@ export default {
     return {};
   },
   components: {
-    TabNav,
     YellowBg,
     Footer
   },
