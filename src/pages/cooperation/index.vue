@@ -16,13 +16,11 @@
         </el-col>
       </el-row>
     </div>
-    <Footer/>
   </div>
 </template>
 
 <script>
 import YellowBg from "@/components/yellowbg.vue";
-import Footer from "@/components/footer";
 
 export default {
   data() {
@@ -30,7 +28,6 @@ export default {
   },
   components: {
     YellowBg,
-    Footer
   },
   methods: {}
 };

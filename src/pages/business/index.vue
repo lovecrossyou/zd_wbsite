@@ -30,14 +30,12 @@
         />
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import YellowBg from "@/components/yellowbg.vue";
 import Item from "./components/listitem.vue";
-import Footer from "@/components/footer";
 
 export default {
   data() {
@@ -46,7 +44,6 @@ export default {
   components: {
     YellowBg,
     Item,
-    Footer
   },
   methods: {}
 };

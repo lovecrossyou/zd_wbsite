@@ -68,14 +68,12 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import home from "./home";
 import HomeTitle from "@/components/hometitle.vue";
-import Footer from "@/components/footer";
 
 export default {
   data() {
@@ -84,7 +82,6 @@ export default {
   components: {
     home,
     HomeTitle,
-    Footer
   },
   methods: {}
 };

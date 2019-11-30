@@ -20,14 +20,11 @@
         </div>
       </div>
     </div>
-
-    <Footer />
   </div>
 </template>
 
 <script>
 import YellowBg from "@/components/yellowbg.vue";
-import Footer from "@/components/footer";
 import map_pic from "@/assets/resources/ziyuanfugai.png";
 import TopMsg from "./components/topmsgitem";
 import ListMsg from "./components/listmsgitem";
@@ -37,7 +34,6 @@ export default {
   },
   components: {
     YellowBg,
-    Footer,
     TopMsg,
     ListMsg
   },

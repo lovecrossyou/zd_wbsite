@@ -14,14 +14,11 @@
         >我司在河南，山西，陕西，河北，甘肃以及云贵川地区有数十家子公司和分支机构，均在当地工商行政管理局有备案。最近几年公司稳步发展，稳居上游并屹立不倒。受到了个地市场和政府的肯定，并授予我司以下称号：</div>
       </div>
     </div>
-
-    <Footer />
   </div>
 </template>
 
 <script>
 import YellowBg from "@/components/yellowbg.vue";
-import Footer from "@/components/footer";
 import map_pic from "@/assets/resources/ziyuanfugai.png";
 export default {
   data() {
@@ -29,7 +26,6 @@ export default {
   },
   components: {
     YellowBg,
-    Footer
   },
   methods: {}
 };

@@ -1,13 +1,6 @@
 <template>
   <div class="body">
     <YellowBg />
-    <!-- <div>
-      <el-row :gutter="20">
-        <el-col :span="10" offset="8">
-          
-        </el-col>
-      </el-row>
-    </div> -->
     <div class="content_wrapper">
       <div class="content">
         <div class="top">
@@ -29,13 +22,11 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import YellowBg from "@/components/yellowbg.vue";
-import Footer from "@/components/footer";
 import HomeTitle from "@/components/hometitle.vue";
 
 export default {
@@ -44,7 +35,6 @@ export default {
   },
   components: {
     YellowBg,
-    Footer,
     HomeTitle
   },
   methods: {}
