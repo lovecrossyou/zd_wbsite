@@ -20,6 +20,7 @@ export default {};
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* box-shadow: 0px 1px 10px 0px rgba(46, 91, 255, 0.23); */
 }
 
 .title {

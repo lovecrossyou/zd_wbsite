@@ -26,7 +26,7 @@ export default {};
   border: solid 1px #e1e1e1;
   margin-top: 20px;
   padding: 20px 10px;
-  box-shadow: 0px 12px 12px -12px #5E5E5E;
+  box-shadow: 0px 1px 10px 0px rgba(46, 91, 255, 0.23);
 }
 
 .title {
